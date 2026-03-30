@@ -84,49 +84,39 @@
   <script>
     const speakers = [
       {
-        name: "Manu Edakara",
-        imageAddress: "https://digitalmeasuresgies.s3.us-east-2.amazonaws.com/business_public/portrait/medaka2.jpg",
-        role: "Speaker",
-        topic: "Rolling the Dice on Humanity",
-        tag1: "Computer Science",
-        tag2: "Anthropology",
-        type: "Entrepreneur"
+        name: "Paige Taylor",
+        imageAddress: "assets/speakers/Paige Taylor.jpg",
+        type: "Social Media Influencer",
+        bio: "Paige Taylor is a social media influencer with over 7 million followers across social platforms. Known for her relatable, comedic approach to personal growth and modern life, Paige has built a devoted audience by sharing unfiltered perspectives on authenticity, self discovery, and navigating culture in real time.",
+        highlights: "Her work blends humor with authenticity offering her audiences a refreshing take on what it means to be yourself in 2026!"
       },
       {
-        name: "Christopher Lemark",
-        imageAddress: "https://pbs.twimg.com/profile_images/1444635733046841351/40YsDAPx_400x400.jpg",
-        role: "Speaker",
-        topic: "A Beautiful Mess",
-        tag1: "Psychology",
-        tag2: "Business",
-        type: "Mental Health Advocate"
+        name: "Ernest Crim III",
+        imageAddress: "assets/speakers/Ernest Crim.jpg",
+        type: "Educator & Cultural Specialist",
+        bio: "Ernest Crim III is an Emmy-nominated public educator, modern-day griot, and cultural competency specialist. A former public school history teacher, he is now a speaker, author, and CEO of Crim\u2019s Cultural Consulting, where he helps schools, organizations, and communities bridge cultural divides through overlooked historical narratives.",
+        highlights: "His work reaches millions online, challenging whitewashed history and centering Black resilience and innovation. A survivor of a viral hate crime, Ernest turns personal pain into public purpose."
       },
       {
-        name: "Elisabeth Pollock",
-        imageAddress: "https://www.advancingpretrial.org/wp-content/uploads/2025/08/illinois-Elisabeth-Pollock.jpg",
-        role: "Speaker",
-        topic: "Inside the System, Against the Odds: The Case for Public Defenders",
-        tag1: "Political Science",
-        tag2: "Law",
-        type: "Public Defender"
-      },
-       {
-        name: "Terry Henderson",
-        imageAddress: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7qrZp46sxFI2mxeD9W9r0fkaJohplmPLCqA&s",
-        role: "Speaker",
-        topic: "Who Gets to Make Music? Reimagining Inclusion from Start to Studio",
-        tag1: "Music",
-        tag2: "Culture",
-        type: "Musician & Educator"
+        name: "Leonora LaPeter Anton",
+        imageAddress: "assets/speakers/Leonora LaPeter.jpeg",
+        type: "Pulitzer Prize-Winning Journalist",
+        bio: "Leonora LaPeter Anton is a freelance writer based in St. Petersburg. For 36 years, she wrote narrative and investigative stories at five Southeastern U.S. newspapers, including for 23 years at the Tampa Bay Times. She is also the reporter and host of an 11-part podcast, called Blood and Truth, about a man on death row for 50 years who sought DNA testing to prove himself innocent. She graduated in 1986 from the University of Illinois at Urbana-Champaign with a Bachelor of Science in Journalism.",
+        highlights: "In 2016, she was part of a three-person team that won the Pulitzer Prize for Investigative Reporting for a series of stories on violence inside Florida\u2019s psychiatric hospitals."
       },
       {
-        name: "Russell Wigginton",
-        imageAddress: "https://news.rhodes.edu/sites/news/files/2024-10/Dr.%20Russell%20Wigginton.jpg",
-        role: "Speaker",
-        topic: "My Journey to the National Civil Rights Museum",
-        tag1: "Civil Rights",
-        tag2: "Political Science",
-        type: "Historian"
+        name: "Paul Rudolph",
+        imageAddress: "assets/speakers/Paul Rudolph.jpeg",
+        type: "Musician & Composer",
+        bio: "Paul Rudolph is a musician, composer, instrument builder, and works for Sesame Street as vocal music director, editor and composer. He works with the cast and guest celebrities on digital content, outreach projects and live performances, including Wynton Marsalis and the Jazz at Lincoln Center orchestra\u2019s \"A Swingin\u2019 Sesame Street\". He also composes multi-media pieces for his percussion performance art group GLANK, using found-object metal to create unique sounds.",
+        highlights: "Rudolph has 3 Emmys for Music Editing, 11 collective Emmys for Outstanding Children\u2019s Series, and 2 Emmy nominations for Music Direction."
+      },
+      {
+        name: "Denise Hewitt",
+        imageAddress: "assets/speakers/Denise Hewitt.webp",
+        type: "Photographer & Forbes 30 Under 30",
+        bio: "Denise Stephanie Hewitt is a photographer, 2026 Forbes 30 Under 30 honoree, and Gordon Parks Foundation scholar dedicating her lens to memorializing the impact and prowess of changemakers in arts, culture, and entertainment. Shooting her first magazine cover at 17 for Marie Claire, to shooting the Met Gala for 5 consecutive years and becoming the youngest to be commissioned by Vogue to do so, she has cemented herself as a rising creative voice of her generation.",
+        highlights: "Hewitt\u2019s visual craft intersects editorial, fashion, and documentary photography with a focus on portraying life, artistry, and autonomy."
       }
     ];
 
@@ -136,9 +126,9 @@
       const html = `
         <figure class="card">
           <div class="card__image-container">
-            <img src="${speaker.imageAddress}" alt="${speaker.name}" class="card__image">   
+            <img src="${speaker.imageAddress}" alt="${speaker.name}" class="card__image">
           </div>
-          
+
           <figcaption class="card__caption">
             <h1 class="card__name">${speaker.name}</h1>
 
@@ -146,27 +136,12 @@
               ${speaker.type}
             </h3>
 
-            <table class="card__stats">
-              <tbody>
-                <tr>
-                  <th>Role</th>
-                  <td>${speaker.role}</td>
-                </tr>
-                <tr>
-                  <th>Speech</th>
-                  <td>${speaker.topic}</td>
-                </tr>
-              </tbody>
-            </table>
-            
+            <p class="card__bio">${speaker.bio}</p>
+
             <div class="card__abilities">
               <h4 class="card__ability">
-                <span class="card__label">Tag</span>
-                ${speaker.tag1}
-              </h4>
-              <h4 class="card__ability">
-                <span class="card__label">Tag</span>
-                ${speaker.tag2}
+                <span class="card__label">Highlights</span>
+                ${speaker.highlights}
               </h4>
             </div>
           </figcaption>

@@ -1336,7 +1336,7 @@ footer {
 .card__image-container {
   padding: 0;
   border-radius: 15px 15px 0 0;
-  height: 250px;
+  height: 370px;
   overflow: hidden;
 }
 
@@ -1380,6 +1380,15 @@ footer {
   letter-spacing: 0.02em;
   color: var(--text-light, #e0e0e0);
   margin-bottom: 10px;
+}
+
+.card__bio {
+  font-size: 0.85em;
+  line-height: 1.5;
+  color: var(--text-light, #e0e0e0);
+  opacity: 0.85;
+  margin: 0.75em 0;
+  text-align: left;
 }
 
 .card__stats {
