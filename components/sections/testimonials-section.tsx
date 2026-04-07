@@ -8,49 +8,49 @@ const executiveBoard = [
     role: "President", 
     major: "Political Science & Spanish",
     bio: "Darby joined TEDx because she believes listening to others and engaging with new ideas helps us better understand the world around us.",
-    image: "https://raw.githubusercontent.com/joshuxchn/tedx-josh/main/exec%20images/darby.jpg" 
+    image: "/images/exec/darby.jpg" 
   },
   { 
     name: "Claire Yung", 
     role: "Director of Curation", 
     major: "Psychology & Sociology",
     bio: "She joined TEDx because she believes everyone has a story worth sharing and wanted to meet new people.",
-    image: "https://raw.githubusercontent.com/joshuxchn/tedx-josh/main/exec%20images/clairey.jpg" 
+    image: "/images/exec/clairey.jpg" 
   },
   { 
     name: "Michelle Park", 
     role: "Director of Event Planning", 
     major: "Media and Cinema Studies",
     bio: "Michelle joined because she wanted to create opportunities for people to share their own stories and passions with the world!",
-    image: "https://raw.githubusercontent.com/joshuxchn/tedx-josh/main/exec%20images/michelle.jpg" 
+    image: "/images/exec/michelle.jpg" 
   },
   { 
     name: "Claire Skowron", 
     role: "Director of Logistics", 
     major: "Chemistry & Statistics",
     bio: "Claire wanted to facilitate this great exchange of information between our world and our campus.",
-    image: "https://raw.githubusercontent.com/joshuxchn/tedx-josh/main/exec%20images/claires.jpg" 
+    image: "/images/exec/claires.jpg" 
   },
   { 
     name: "Cale Workman", 
     role: "Director of Membership", 
     major: "Economics, CS Minor",
     bio: "Cale joined TEDx to utilize and refine his professional communication skills!",
-    image: "https://raw.githubusercontent.com/joshuxchn/tedx-josh/main/exec%20images/cale.jpg" 
+    image: "/images/exec/cale.jpg" 
   },
   { 
     name: "Mahek Dugar", 
     role: "Director of Finance", 
     major: "Finance & Data Science",
     bio: "Mahek joined TEDxUIUC because she's always loved listening to people explain why they think the way they do.",
-    image: "https://raw.githubusercontent.com/joshuxchn/tedx-josh/main/exec%20images/mahek.jpg" 
+    image: "/images/exec/mahek.jpg" 
   },
   { 
     name: "Ella Ko", 
     role: "Director of Marketing", 
     major: "Marketing & Information Systems",
     bio: "Ella joined TEDxUIUC because she wanted to help bring different perspectives and ideas to the UIUC community.",
-    image: "https://raw.githubusercontent.com/joshuxchn/tedx-josh/main/exec%20images/ella.jpg" 
+    image: "/images/exec/ella.jpg" 
   },
 ];
 
