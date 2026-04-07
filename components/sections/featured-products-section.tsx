@@ -8,28 +8,28 @@ const speakers = [
     title: "Social Media Influencer",
     bio: "Paige Taylor is a social media influencer with over 7 million followers across social platforms. Known for her relatable, comedic approach to personal growth and modern life, Paige has built a devoted audience by sharing unfiltered perspectives on authenticity, self discovery, and navigating culture in real time.",
     highlights: "Her work blends humor with authenticity offering her audiences a refreshing take on what it means to be yourself in 2026!",
-    image: "https://raw.githubusercontent.com/joshuxchn/tedx-josh/main/assets/speakers/Paige%20Taylor.jpg",
+    image: "/images/speakers/Paige Taylor.jpg",
   },
   {
     name: "Ernest Crim III",
     title: "Educator & Cultural Specialist",
     bio: "Ernest Crim III is an Emmy-nominated public educator, modern-day griot, and cultural competency specialist. A former public school history teacher, he is now a speaker, author, and CEO of Crim's Cultural Consulting, where he helps schools, organizations, and communities bridge cultural divides through overlooked historical narratives.",
     highlights: "His work reaches millions online, challenging whitewashed history and centering Black resilience and innovation.",
-    image: "https://raw.githubusercontent.com/joshuxchn/tedx-josh/main/assets/speakers/Ernest%20Crim.jpg",
+    image: "/images/speakers/Ernest Crim.jpg",
   },
   {
     name: "Leonora LaPeter Anton",
     title: "Pulitzer Prize-Winning Journalist",
     bio: "Leonora LaPeter Anton is a freelance writer based in St. Petersburg. For 36 years, she wrote narrative and investigative stories at five Southeastern U.S. newspapers, including for 23 years at the Tampa Bay Times. She graduated in 1986 from the University of Illinois at Urbana-Champaign with a Bachelor of Science in Journalism.",
     highlights: "In 2016, she was part of a three-person team that won the Pulitzer Prize for Investigative Reporting.",
-    image: "https://raw.githubusercontent.com/joshuxchn/tedx-josh/main/assets/speakers/Leonora%20LaPeter.jpeg",
+    image: "/images/speakers/Leonora LaPeter.jpeg",
   },
   {
     name: "Paul Rudolph",
     title: "Musician & Composer",
     bio: "Paul Rudolph is a musician, composer, instrument builder, and works for Sesame Street as vocal music director, editor and composer. He works with the cast and guest celebrities on digital content, outreach projects and live performances.",
     highlights: "Rudolph has 3 Emmys for Music Editing, 11 collective Emmys for Outstanding Children's Series, and 2 Emmy nominations for Music Direction.",
-    image: "https://raw.githubusercontent.com/joshuxchn/tedx-josh/main/assets/speakers/Paul%20Rudolph.jpeg",
+    image: "/images/speakers/Paul Rudolph.jpeg",
   },
 ];
 
