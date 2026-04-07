@@ -1,0 +1,130 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+
+export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header 
+      className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-3xl transition-all duration-300 bg-background/90 backdrop-blur-md rounded-full"
+      style={{
+        boxShadow: "rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px"
+      }}
+    >
+      <div className="flex items-center justify-between transition-all duration-300 px-2 pl-5 py-2">
+        {/* Logo */}
+        <Link href="#hero" className="text-lg font-medium tracking-tight transition-colors duration-300 text-foreground">
+          TEDx<span className="text-[#E62B1E]">UIUC</span>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden items-center gap-10 md:flex">
+          <Link
+            href="#about"
+            className="text-sm transition-colors text-muted-foreground hover:text-foreground"
+          >
+            About
+          </Link>
+          <Link
+            href="#speakers"
+            className="text-sm transition-colors text-muted-foreground hover:text-foreground"
+          >
+            Speakers
+          </Link>
+          <Link
+            href="#team"
+            className="text-sm transition-colors text-muted-foreground hover:text-foreground"
+          >
+            The Team
+          </Link>
+          <Link
+            href="#join"
+            className="text-sm transition-colors text-muted-foreground hover:text-foreground"
+          >
+            Join
+          </Link>
+        </nav>
+
+        {/* CTA */}
+        <div className="hidden items-center gap-6 md:flex">
+          <Link
+            href="https://events.ticketleap.com/tickets/tedxuiuc/tedxuiuc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 text-sm font-medium transition-all rounded-full bg-[#E62B1E] text-white hover:opacity-80"
+          >
+            Get Tickets
+          </Link>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          type="button"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="transition-colors md:hidden text-foreground"
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="border-t border-border bg-background px-6 py-8 md:hidden rounded-b-2xl">
+          <nav className="flex flex-col gap-6">
+            <Link
+              href="#about"
+              className="text-lg text-foreground"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              href="#speakers"
+              className="text-lg text-foreground"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Speakers
+            </Link>
+            <Link
+              href="#team"
+              className="text-lg text-foreground"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              The Team
+            </Link>
+            <Link
+              href="#join"
+              className="text-lg text-foreground"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Join
+            </Link>
+            <Link
+              href="https://events.ticketleap.com/tickets/tedxuiuc/tedxuiuc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 bg-[#E62B1E] px-5 py-3 text-center text-sm font-medium text-white rounded-full"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Get Tickets
+            </Link>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+}
